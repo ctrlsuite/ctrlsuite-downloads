@@ -134,6 +134,31 @@ Profiles can be created, renamed, deleted, exported, and imported
 (`.ctrlsuite.json`; files exported by earlier versions still import). You can also switch profile from the tray icon's
 menu (see [Tray](#tray)). *New* buttons are green, buttons that delete or remove are red, and buttons that apply something (*Apply now*, *Apply*) are blue.
 
+### Buttons
+
+Right under *Deadzone* in the sidebar.
+
+Every binding has its own switch.
+
+**Mute button → Discord.** *Add binding*, choose **Mute button (DualSense)** as the button (DualSense or DualSense Edge),
+press *Record* and press a combination you never use (for example Ctrl + Alt + M). Then in Discord go to **User Settings →
+Keybinds**, add a keybind with the **Toggle Mute** action and record the same combination there — you can even press the
+controller's mute button while Discord is recording. It has to be a keybind added there: Discord's built-in shortcuts, such as
+Ctrl + Shift + M, only work while Discord's window is in front. If a game runs as administrator, Discord only hears its
+keybinds if you start Discord as administrator too. It works with or without the
+deadzone, as long as CTRLSuite is open (the notification area is enough). The mute button's light stays off: Discord already
+plays a sound. Over Bluetooth the button may only be seen after the app has sent the controller its LED settings or the deadzone
+has been on once. For a few seconds after the app starts, and after the deadzone is switched on or off, the mute button isn't read
+while Windows restarts the controller.
+
+**Bindings.** *Add binding*, choose a controller button, then what it becomes:
+
+- **Another controller button** (for example, swap Cross and Circle): only works **with the deadzone on**, because games then
+  read CTRLSuite's virtual controller. With the deadzone off they read your real controller, which can't be changed.
+- **A keyboard key or combination** (press *Record*, then the keys; Esc cancels): works **always**, while CTRLSuite is open.
+  With the deadzone on, the game no longer gets the original button; with it off, it gets both the button and the keys, so
+  it's best for buttons your game doesn't use (PS, touchpad, Share).
+
 ### Controller test
 
 Inspired by [GuliKit Test & Cal](https://test.gulikit.com) (independent implementation). Works with any

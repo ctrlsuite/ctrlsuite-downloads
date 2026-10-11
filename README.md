@@ -287,6 +287,17 @@ area, with the administrator permission it needs and without asking you every ti
 doesn't work for this app: Windows silently skips programs that need administrator rights there.) Open the app from the
 tray whenever you like. If you uninstall CTRLSuite, untick it first.
 
+**Controller overlay.** **Show the controller overlay over games** (off by default) puts a small drawing of your controller in a
+corner of the main screen, showing the buttons, triggers and sticks as you press and move them. You choose the corner and the
+size (small, normal or large). It recognizes the controller by itself: a DualSense gets the PS5 drawing, a DualShock 4 the PS4
+one, and Xbox and other controllers the Xbox one, each with its own button symbols (✕ ○ □ △ or A B X Y). If your controller is
+none of these, pick the drawing closest to it under **Drawing**. The triggers fill up as you press them. It is see-through,
+and faded while no controller is connected. Its colours are yours to choose, in the same card: **Controller color** and
+**Button color**, each Primary or Secondary (your theme's) or Custom, with a colour picker. Pressed buttons light up in a
+clearly lighter shade of the button colour, or in the colour you pick under **Pressed button color**. The **Opacity** slider sets how see-through it is, from 20 % to 100 %.
+The mouse goes straight through it and it never takes control away from the game. It does not show over games running in
+**exclusive fullscreen**: switch the game to borderless window (often called "borderless" or "windowed fullscreen").
+
 The **Enable the deadzone at startup** checkbox is off by default. When it is on, the deadzone
 switches itself on as soon as the controller is recognized — you open the app, move a stick, and you're set. You can
 still adjust the deadzone live while it's on.

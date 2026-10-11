@@ -287,9 +287,11 @@ area, with the administrator permission it needs and without asking you every ti
 doesn't work for this app: Windows silently skips programs that need administrator rights there.) Open the app from the
 tray whenever you like. If you uninstall CTRLSuite, untick it first.
 
-**Controller overlay.** **Show the controller overlay over games** (off by default) puts a small drawing of your controller in a
-corner of the main screen, showing the buttons, triggers and sticks as you press and move them. You choose the corner and the
-size (small, normal or large). It recognizes the controller by itself: a DualSense gets the PS5 drawing, a DualShock 4 the PS4
+**Controller overlay.** **Show the controller overlay over games** (off by default) puts a small drawing of your controller on
+your screen, showing the buttons, triggers and sticks as you press and move them. Choose a corner under **Position**, or **Custom**
+to put it anywhere: press **Move the overlay**, drag it where you like and press **Done**. **Reset position** puts it back
+where it was before you moved it. You also choose its size
+(small, normal or large). It recognizes the controller by itself: a DualSense gets the PS5 drawing, a DualShock 4 the PS4
 one, and Xbox and other controllers the Xbox one, each with its own button symbols (✕ ○ □ △ or A B X Y). If your controller is
 none of these, pick the drawing closest to it under **Drawing**. The triggers fill up as you press them. It is see-through,
 and faded while no controller is connected. Its colours are yours to choose, in the same card: **Controller color** and

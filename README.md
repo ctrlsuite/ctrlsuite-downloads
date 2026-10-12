@@ -250,12 +250,24 @@ Two driver variants:
 
 - *Standard, up to 1000 Hz*: signed, no other requirements. **Recommended.**
 - *Patched, up to 4000 / 8000 Hz*: requires a USB 3.x controller, the Microsoft `usbxhci` driver, and
-  **Windows Memory Integrity disabled**, otherwise the driver won't load.
+  **Windows Memory Integrity disabled**, otherwise the driver won't load. Point the app at the folder where you extracted
+  HIDUSBF: it takes the builds signed by Microsoft (`AMD64_AS`), which also load with **Secure Boot** on. If Windows
+  refuses the driver anyway, the app tells you and puts the controller back to its default rate. Turning Secure Boot off is not recommended:
+  anti-cheat systems such as Easy Anti-Cheat may then refuse to start your games.
 
 How to use: install the driver once (requires running as administrator), then select your target frequency
 and press **Apply**. The app restarts the device and the **Measured rate** counter shows actual reads
 per second when you move a stick. If the requested frequency isn't reached, the app says so and notes the
 actually measured value next to the controller (e.g. *measured 1000 Hz*).
+
+With a PlayStation controller you can let the app find the best setting: **Find the maximum** tries each rate, counts
+how many readings really arrive, and keeps the lowest rate that reaches the highest count (about half a minute; switch
+the deadzone off first). Every time it starts, the app checks that the overclock you chose is still active — a Windows
+update or another USB port can remove it — and tells you what to do if it is not.
+
+The overclock applies to one controller on one USB port. If you plug in another controller, or move yours to a
+different port, the app tells you it is running without the overclock, so you can apply it there too. Keyboards and
+mice that also act as a joystick are hidden from the list; **Show all USB devices** shows them.
 
 *Default (remove)* removes the filter and frequency. Set all devices back to *Default* before clicking
 **Remove driver** — a device pointing to a missing filter driver stops working until you uninstall and

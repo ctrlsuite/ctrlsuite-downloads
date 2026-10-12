@@ -241,10 +241,14 @@ Raises the frequency at which Windows reads the USB controller (polling) using
 [HIDUSBF](https://github.com/LordOfMice/hidusbf) by SweetLow.
 
 > **The HIDUSBF driver is not included in the app.** The section shows **Download the driver**, which
-> opens the page to get it from, and **Choose the folder…**, which asks where it was extracted. The app
+> opens its author's GitHub page, and **Choose the folder…**, which asks where it was extracted. The app
 > recognizes the official archive structure and copies the right files automatically — you don't need to
 > place them manually. Files it can't place with certainty are left alone: installing the wrong version
 > is worse than not finding it.
+
+When a newer HIDUSBF comes out (new versions are often needed after a Windows update), the app tells you at start-up
+and shows a note in the Overclock section: download it, extract it, press **Choose the folder…** and reinstall the
+driver.
 
 Two driver variants:
 

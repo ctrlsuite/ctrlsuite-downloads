@@ -352,6 +352,9 @@ taskbar.
 Right-clicking the tray icon gives you: *Open CTRLSuite*, *Enable/Disable deadzone*, *Profiles*, and
 *Close CTRLSuite*.
 
+Both the X and *Close CTRLSuite* ask **Close CTRLSuite?** first, so the deadzone is not switched off by a slip.
+Pressing Enter answers *Cancel*.
+
 *Profiles* lists the **five profiles you used most recently**, the latest first, with the active one ticked; pick one
 and it becomes the active profile at once, even while the deadzone is running. It never lists them all, so it stays
 usable however many profiles you have: when there are more, the last entry is *More profiles…*, which opens the
